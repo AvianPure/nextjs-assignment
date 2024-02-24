@@ -50,8 +50,6 @@ export default function Page() {
               },
               y: {
                   beginAtZero: true,
-                  //Jos ylhäällä map functioon koittaa y-akselille lisätä  + ' snt/kWh' se rikkoo chartin jostain syystä.
-                  //joten tehdään callback funktio josta saadaan y-akselin label, johon lisätty snt/kwh
                   ticks: {
                       callback: function(value) {
                           return value + " snt/kWh";
